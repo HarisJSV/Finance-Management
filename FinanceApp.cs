@@ -3,7 +3,7 @@ using entity;
 using MyExceptions;
 using System;
 using System.Collections.Generic;
-
+using efrepo;
 namespace FinanceManagement
 {
     public class FinanceApp
@@ -237,6 +237,7 @@ namespace FinanceManagement
 
         static void ShowAdminMenu(IFinanceRepository repo)
         {
+            EfRepo efRepo = new EfRepo();
             while (true)
             {
                 Console.WriteLine("\n--- Admin Menu ---");
@@ -247,6 +248,7 @@ namespace FinanceManagement
                 Console.WriteLine("5. Update Expense");
                 Console.WriteLine("6. View All Expenses (by User ID)");
                 Console.WriteLine("7. Expense Report");
+                Console.WriteLine("8. View All existing Users (via Entity Framework)");
                 Console.WriteLine("0. Logout");
                 Console.Write("Choose an option: ");
 
@@ -377,6 +379,15 @@ namespace FinanceManagement
                                 total += exp.Amount;
                             }
                             Console.WriteLine($"\nTotal: ₹{total}");
+                        }
+                        break;
+
+                    case "8":
+                        var users = efRepo.GetAllUsers();
+                        Console.WriteLine("\n--- All Users ---");
+                        foreach (var user in users)
+                        {
+                            Console.WriteLine($"ID: {user.UserId} | Username: {user.Username} | Email: {user.Email}");
                         }
                         break;
 

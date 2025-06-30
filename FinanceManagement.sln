@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyExceptions", "Exceptions\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceTests", "FinanceTests\FinanceTests.csproj", "{5E57141C-707E-46AF-8653-867AB417D536}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "efrepo", "efrepo\efrepo.csproj", "{BB9CA102-388B-4942-860F-8FF30B8481A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "db", "db\db.csproj", "{82198F8E-3910-4C34-BE59-4198BF409538}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{5E57141C-707E-46AF-8653-867AB417D536}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E57141C-707E-46AF-8653-867AB417D536}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E57141C-707E-46AF-8653-867AB417D536}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB9CA102-388B-4942-860F-8FF30B8481A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB9CA102-388B-4942-860F-8FF30B8481A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB9CA102-388B-4942-860F-8FF30B8481A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB9CA102-388B-4942-860F-8FF30B8481A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82198F8E-3910-4C34-BE59-4198BF409538}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82198F8E-3910-4C34-BE59-4198BF409538}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82198F8E-3910-4C34-BE59-4198BF409538}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82198F8E-3910-4C34-BE59-4198BF409538}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
