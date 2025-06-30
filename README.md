@@ -12,3 +12,6 @@ Note: You will not find the admin table queries on the schema because it's purel
 And as for the Nunit 3 unit tests, I had used version 4.3.2 with a .Net framework of 4.7.2
 Sooo, if you are using Nunit 4, you have to use Assert.That(condition, Is.True) rather than Assert.IsTrue(condition), etc.
 This project uses Nunit 4, so the code uses the former of the two statements above.
+
+### Entity Framework:
+So, the project implements ADO .NET for the most part, however I had also implemented Entity Framework, specifically in the admin menu. It's not mandatory, but try it if you want. 
