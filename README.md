@@ -6,3 +6,8 @@ The admin role is completely optional, I made it just so for proper use.
 
 
 Note: You will not find the admin table queries on the schema because it's purely optional. It will only contain expense,expensecategories and users just as the instructions intended.
+
+(Important)
+And as for the Nunit 3 unit tests, I had used version 4.3.2 with a .Net framework of 4.7.2
+Sooo, if you are using Nunit 4, you have to use Assert.That(condition, Is.True) rather than Assert.IsTrue(condition), etc.
+This project uses Nunit 4, so the code uses the former of the two statements above.
